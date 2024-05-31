@@ -4,10 +4,10 @@ import type { NextPage } from "next";
 const Explore: NextPage = () => {
   return (
     <PageTemplate
-      title="Explorar Restaurantes"
-      description="Veja as os melhores restaurantes do Nibble!"
+      title="Explorar Marcar"
+      description="Ver las mejores marcas en Marketplace B2B!"
     >
-      <Highlights title="Restaurantes próximos" />
+      <Highlights title="Marcas Destacadas" />
       <Foods />
     </PageTemplate>
   );

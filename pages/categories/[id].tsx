@@ -8,7 +8,7 @@ export default function Categories({ id }: CategoriesProps) {
       title={`${id} - Categorias`}
       description="Página de categorias do Nibble Restaurantes"
     >
-      <Highlights title="Restaurantes mais próximos" />
+      <Highlights title="Marcas mas cercanas" />
     </PageTemplate>
   );
 }

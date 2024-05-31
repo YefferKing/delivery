@@ -10,12 +10,12 @@ export function Sidebar() {
       <div className={Styles.sidebar}>
         <div className={Styles.header}>
           <Image
-            src="/logo.png"
-            width={40}
-            height={32}
-            alt="Nibble Restaurantes"
+            src="/B2B.png"
+            width={70}
+            height={60}
+            alt="B2B"
           />
-          <h3>Nibble</h3>
+          <h3>MARKETPLACE B2B</h3>
         </div>
         <ul className={Styles.menu}>
           <li className={Styles.active}>
@@ -39,42 +39,12 @@ export function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link href="/">
-              <a>
-                <span>
-                  <IconBase iconName="bookmark" color="#a3a3a4" />
-                </span>
-                Favoritos
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>
-                <span>
-                  <IconBase iconName="document" color="#a3a3a4" />
-                </span>
-                Pedidos
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
+            <Link href="/explore">
               <a>
                 <span>
                   <IconBase iconName="letter" color="#a3a3a4" />
                 </span>
-                Mensagens
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <a>
-                <span>
-                  <IconBase iconName="gear" color="#a3a3a4" />
-                </span>
-                Configurações
+                Mensajeria
               </a>
             </Link>
           </li>

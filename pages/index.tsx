@@ -5,7 +5,7 @@ const Home: NextPage = () => {
   return (
     <PageTemplate
       title="Home"
-      description="Página inicial do Nibble Restaurantes"
+      description="Marketplace B2B"
     >
       <Categories />
       <Highlights />

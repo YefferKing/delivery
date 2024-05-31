@@ -9,9 +9,7 @@ type HighlightsItemProps = {
   name: string;
   rating: number;
   reviews: number;
-  category: string;
   distance: number;
-  price: number;
   bonus: string;
   brandUrl: string;
 };
@@ -41,14 +39,6 @@ export const HighlightsItem = ({ ...props }: HighlightsItemProps) => {
           <div>
             <IconBase iconName="star" size={16} color="#facd5d" />
             <span>{props.rating}</span> ({props.reviews})
-          </div>
-          <div>
-            <IconBase iconName="cutlery" size={16} color="#a3a3a4" />
-            {props.category}
-          </div>
-          <div>
-            <IconBase iconName="money" size={16} color="#a3a3a4" />
-            {props.price}
           </div>
         </div>
         <div>

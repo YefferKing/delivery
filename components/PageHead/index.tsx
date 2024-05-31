@@ -10,10 +10,10 @@ type PageHeadProps = {
 export function PageHead({ ...props }: PageHeadProps) {
   return (
     <Head>
-      <title>{props.title} - Nibble Restaurantes</title>
+      <title>{props.title} -  Marketplace B2B</title>
       <meta name="description" content={props.description} />
       <meta name="keywords" content={props.keywords} />
-      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" href="/B2B.ico" type="image/x-icon" />
     </Head>
   );
 }

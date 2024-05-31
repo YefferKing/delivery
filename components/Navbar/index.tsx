@@ -3,6 +3,7 @@ import Link from "next/link";
 import { IconBase, SearchBar } from "..";
 import { useFilter } from "stores";
 import Styles from "./styles.module.css";
+import { IconLogin } from "components/IconFamily";
 
 export function Navbar() {
   const { toggleModal } = useFilter((store) => store);
@@ -14,7 +15,7 @@ export function Navbar() {
           <Link href="/">
             <a>
               <IconBase iconName="target-location" size={24} color="#503e9d" />
-              San Francisco, California
+              Cúcuta, Norte de Satander
               <IconBase iconName="arrow-top-down" size={16} color="#000" />
             </a>
           </Link>
@@ -45,6 +46,9 @@ export function Navbar() {
         </button>
         <button className={Styles.cart_button}>
           <IconBase iconName="shopping-cart" size={20} color="#fff" />
+        </button>
+        <button className={Styles.cart_button}>
+          <IconBase iconName="login" size={20} color="#fff" />
         </button>
       </div>
     </div>

@@ -22,6 +22,10 @@ import {
   IconStore,
   IconTargetLocation,
   IconWallet,
+  IconAirplane,
+  IconLogin,
+  IconShoe,
+  IconJean
 } from "../IconFamily";
 
 type IconBaseProps = IconProps & {
@@ -78,6 +82,14 @@ export const IconBase = ({
       return <IconFilter size={size} color={color} />;
     case "search":
       return <IconSearch size={size} color={color} />;
+    case "airplane":
+      return <IconAirplane size={size} color={color} />;
+    case "login":
+      return <IconLogin size={size} color={color} />;    
+    case "shoes":
+        return <IconShoe size={size} color={color} />;
+    case "jean":
+        return <IconJean size={size} color={color} />;        
     default:
       return null;
   }

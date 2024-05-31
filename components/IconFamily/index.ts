@@ -20,3 +20,7 @@ export * from "./IconShoppingCart";
 export * from "./IconCoupon";
 export * from "./IconFilter";
 export * from "./IconSearch";
+export * from "./IconAirplane";
+export * from "./IconLogin";
+export * from "./IconShoe";
+export * from "./IconJean";

@@ -34,7 +34,7 @@ const RatingComponent = (rating: number, reviews: number | undefined) => (
 
 const CategoryComponent = (category: string) => (
   <div className={Styles.info}>
-    <IconBase iconName="cutlery" size={16} color="#a3a3a4" />
+    <IconBase iconName="jean" size={16} color="#a3a3a4" />
     {category}
   </div>
 );
@@ -59,7 +59,7 @@ const DistanceComponent = (distance: string) => (
 
 const DeliveryTimeComponent = (deliveryTime: string) => (
   <div className={Styles.info}>
-    <IconBase iconName="bike" size={16} color="#a3a3a4" />
+    <IconBase iconName="airplane" size={16} color="#a3a3a4" />
     {deliveryTime}
   </div>
 );

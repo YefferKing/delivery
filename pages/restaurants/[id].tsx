@@ -9,26 +9,25 @@ export default function Restaurant({ id }: RestaurantProps) {
       title="Restaurante"
       description="Página de restaurante do Nibble Restaurantes"
     >
-      <div>[imagem]</div>
+      <img src="../brands/stopp.svg" alt="Stop Jeans" width="20%" />
       <div className={Styles.header}>
         <div className={Styles.details}>
-          <h1>Burger King</h1>
+          <h1>Stop Jeans</h1>
           <p>
-            It is one of the most iconic and well-recognizable fast food
-            restaurants out there which offers really amazing food and drinks.
+          Es una de las marcas rápidas más emblemáticas y reconocibles.
           </p>
         </div>
         <div className={Styles.tags}>
           <span>Entrega grátis</span>
-          <span>Compre 1 leve 2</span>
-          <span>Abre às 12h</span>
+          <span>Compre 1 lleve 2</span>
+          <span>Abre a las 8h</span>
         </div>
       </div>
       <div className="mb-12">
         <ItemDetails
           rating={4.7}
           reviews={202}
-          category={"Hambúguer"}
+          category={"Jeans"}
           price={1}
           distance={"4,3 km (Irving St, San Francisco, California)"}
         />
