@@ -4,7 +4,7 @@ import React from "react";
 import { IconBase } from "..";
 import Styles from "./styles.module.css";
 
-type HighlightsItemProps = {
+type ChtaslightsItemProps = {
   id: string;
   name: string;
   rating: number;
@@ -12,11 +12,11 @@ type HighlightsItemProps = {
   brandUrl: string;
 };
 
-export const HighlightsItem = ({ ...props }: HighlightsItemProps) => {
+export const ChatslightsItem = ({ ...props }: ChtaslightsItemProps) => {
   return (
     <div className={Styles.restaurant}>
       <div className={Styles.brand}>
-        <Link href={`restaurants/${props.id}`}>
+        <Link href={`marcas/${props.id}`}>
           <a>
             <Image
               src={props.brandUrl}

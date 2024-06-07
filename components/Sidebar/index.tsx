@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { useRouter } from 'next/router'; // Importa useRouter
 import { IconBase, UserProfile } from "..";
 import Styles from "./styles.module.css";
 
 export function Sidebar() {
+  const router = useRouter(); // Usa useRouter
+  const { pathname } = router; // Obtén la ruta actual
+
   return (
     <div>
       <div className={Styles.sidebar}>
@@ -18,17 +22,17 @@ export function Sidebar() {
           <h3>MARKETPLACE B2B</h3>
         </div>
         <ul className={Styles.menu}>
-          <li className={Styles.active}>
+          <li className={pathname === '/' ? Styles.active : ''}>
             <Link href="/">
               <a>
                 <span>
-                  <IconBase iconName="home" color="#fff" />
+                  <IconBase iconName="home" color="#a3a3a4" />
                 </span>
                 Home
               </a>
             </Link>
           </li>
-          <li>
+          <li className={pathname === '/explore' ? Styles.active : ''}>
             <Link href="/explore">
               <a>
                 <span>
@@ -38,8 +42,8 @@ export function Sidebar() {
               </a>
             </Link>
           </li>
-          <li>
-            <Link href="/explore">
+          <li className={pathname === '/chats' ? Styles.active : ''}>
+            <Link href="/chats">
               <a>
                 <span>
                   <IconBase iconName="letter" color="#a3a3a4" />
