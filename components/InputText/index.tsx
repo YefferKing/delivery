@@ -8,22 +8,20 @@ type InputTextProps = {
   placeholder: string;
 };
 
-export function InputText({ ...props }: InputTextProps) {
+export function InputText({ label, type, placeholder }: InputTextProps) {
   return (
-    <>
-      <div className={Styles.container}>
-        <div className={Styles.icon}>
-          <InputIcon size={24} color="#503e9d" />
-        </div>
-        <div className="grow">
-          <label className={Styles.label}>{props.label}</label>
-          <input
-            className={Styles.input}
-            type={props.type}
-            placeholder={props.placeholder}
-          />
-        </div>
+    <div className={Styles.container}>
+      <div className={Styles.icon}>
+        <InputIcon size={24} color="#503e9d" />
       </div>
-    </>
+      <div className="grow">
+        <label className={Styles.label}>{label}</label>
+        <input
+          className={Styles.input}
+          type={type}
+          placeholder={placeholder}
+        />
+      </div>
+    </div>
   );
 }

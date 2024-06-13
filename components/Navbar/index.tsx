@@ -47,9 +47,11 @@ export function Navbar() {
         <button className={Styles.cart_button}>
           <IconBase iconName="shopping-cart" size={20} color="#fff" />
         </button>
-        <button className={Styles.cart_button}>
-          <IconBase iconName="login" size={20} color="#fff" />
-        </button>
+        <Link href="/login">
+          <a className={Styles.cart_button}>
+            <IconBase iconName="login" size={20} color="#fff" />
+          </a>
+        </Link>
       </div>
     </div>
   );
